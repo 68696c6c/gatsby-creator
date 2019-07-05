@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+
+  app:
+    image: gatsby-creator:dev
+    command: yarn serve-dev
+    volumes:
+    - $HOME/Code:/projects/code
+    working_dir: /projects/code
